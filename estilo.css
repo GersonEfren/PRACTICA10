@@ -1,0 +1,123 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Fondo.jpg);
+    background-size: cover;
+}
+h2{
+    color: green;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: 20px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .formBox form{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox form h1{
+    color: red;
+    font-weight: 500;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox form .inputBox{
+    position: relative;
+    margin-bottom: 40px;
+}
+.container .formBox form .inputBox:last-child{
+    margin-bottom: 0px;
+}
+.container .formBox form .inputBox input,
+.container .formBox form .inputBox textarea{
+    position: relative;
+    background: transparent;
+    outline:none;
+    border: none;
+    width: 100%;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.726);
+    resize:none ;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox form .inputBox textarea{
+   height: 100px; 
+}
+.container .formBox form .inputBox input[type="submit"]{
+    background: white;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: #ff5064;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox form .inputBox input[type="submit"]:focus
+{
+    background: #1bfaad;
+    color: #111;
+}
+.container .formBox form .inputBox span
+{
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    size: .35px;
+    transition: all 0.2s;
+    align-items: center;
+    text-align: center;
+}
+.container .formBox form .inputBox input:focus ~ span,
+.container .formBox form .inputBox input:valid ~ span
+{
+    transform: translateY(-48px);
+    color: #1bfaad;
+    font-size: 14px;
+}
+.container .formBox form .inputBox input:focus ,
+.container .formBox form .inputBox input:valid 
+{
+    border-bottom-color:#fff ;
+}
