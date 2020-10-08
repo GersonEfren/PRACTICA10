@@ -1,1 +1,0 @@
-# practica10_1.github.io
